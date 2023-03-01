@@ -18,6 +18,9 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 public class PlayAnMP3 extends Application {
+	
+	// Jiaxi Huang
+	// made the changes for the assignment
 
   public static void main(String[] args) {
     launch(args);
@@ -28,7 +31,7 @@ public class PlayAnMP3 extends Application {
   @Override
   public void start(Stage stage) throws Exception {
     BorderPane pane = new BorderPane();
-    String path = "songfiles/Capture.mp3";
+    String path = "songfiles/Gotta Catch 'Em All.mp3";
     pane.setCenter( new Label(path));
     playASong(path);
     // Put the pane in a sized Scene and show the GUI
@@ -39,6 +42,8 @@ public class PlayAnMP3 extends Application {
   }
 
   
+  
+  // comment 1
   private void playASong(String path) {
    
     // Need a File and URI object so the path works on all OSs
@@ -55,6 +60,8 @@ public class PlayAnMP3 extends Application {
  
     }
   
+  
+  // comment 2
   private class Waiter implements Runnable {
     @Override
     public void run() {
